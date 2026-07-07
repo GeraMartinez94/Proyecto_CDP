@@ -10,26 +10,6 @@ Un pipeline de datos **completo y ejecutable** que simula una arquitectura **Clo
 
 ---
 
-##  Estructura del Proyecto
-
-```
-proyecto-cdp/
-├── README.md                        
-├── 01_GUIA_CDP_TEORIA.md            
-├── 02_PIPELINE_CDP_PRACTICO.py       
-├── 03_FAQ_TECNICO_CDP.md            
-├── 04_GUIA_EJECUCION.md             
-├── requirements.txt                
-├── data_lake/                        
-│   ├── raw_medidores_input.parquet
-│   ├── processed_medidores.parquet
-│   ├── aggregated_por_zona.parquet
-│   └── anomalias_detectadas.parquet
-└── .gitignore                      
-```
-
----
-
 ##  Inicio Rápido
 
 ### 1. Clonar el repositorio
