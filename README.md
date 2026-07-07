@@ -372,16 +372,6 @@ Este proyecto está bajo licencia **MIT**. Ver archivo `LICENSE` para detalles c
 
 ---
 
-## ⭐ Agradecimiento
-
-Si este proyecto te fue útil para aprender CDP o para tu entrevista de Data Engineering, **considera darle una ⭐ en GitHub**. ¡Motiva a seguir contribuyendo!
-
-```
-⭐ STAR THIS REPO IF YOU FOUND IT USEFUL ⭐
-```
-
----
-
 ## 📝 Changelog
 
 ### v1.0.0 (2026-01-15)
