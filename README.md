@@ -140,8 +140,7 @@ python -c "import pandas as pd; df = pd.read_parquet('./data_lake/processed_medi
 proyecto-cdp/
 ├── README.md                          # Este archivo
 ├── 01_GUIA_CDP_TEORIA.md             # Conceptos teóricos de CDP
-├── 02_PIPELINE_CDP_PRACTICO.py       # Pipeline ejecutable ⭐
-├── 03_FAQ_TECNICO_CDP.md             # 20 preguntas de entrevista
+├── 02_PIPELINE_CDP_PRACTICO.py       # Pipeline ejecutable 
 ├── 04_GUIA_EJECUCION.md              # Instrucciones detalladas
 ├── requirements.txt                  # Dependencias Python
 ├── .gitignore                        # Git ignore rules
