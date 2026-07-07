@@ -141,7 +141,7 @@ proyecto-cdp/
 ├── README.md                          # Este archivo
 ├── 01_GUIA_CDP_TEORIA.md             # Conceptos teóricos de CDP
 ├── 02_PIPELINE_CDP_PRACTICO.py       # Pipeline ejecutable 
-├── 04_GUIA_EJECUCION.md              # Instrucciones detalladas
+├── 03_GUIA_EJECUCION.md              # Instrucciones detalladas
 ├── requirements.txt                  # Dependencias Python
 ├── .gitignore                        # Git ignore rules
 ├── LICENSE                           # MIT License
@@ -163,8 +163,7 @@ proyecto-cdp/
 |---------|----------|--------|
 | **01_GUIA_CDP_TEORIA.md** | Conceptos, arquitectura, componentes CDP | 30 min |
 | **02_PIPELINE_CDP_PRACTICO.py** | Pipeline ejecutable completo | 20 min |
-| **03_FAQ_TECNICO_CDP.md** | 20 preguntas típicas de entrevista | 60 min |
-| **04_GUIA_EJECUCION.md** | Instrucciones instalación y troubleshooting | 10 min |
+| **03_GUIA_EJECUCION.md** | Instrucciones instalación y troubleshooting | 10 min |
 
 ---
 
@@ -301,7 +300,7 @@ python 02_PIPELINE_CDP_PRACTICO.py
 - En Windows: Usar WSL (Windows Subsystem for Linux)
 - O ejecutar en Google Colab
 
-Ver `04_GUIA_EJECUCION.md` para más soluciones.
+Ver `03_GUIA_EJECUCION.md` para más soluciones.
 
 ---
 
@@ -376,7 +375,6 @@ Este proyecto está bajo licencia **MIT**. Ver archivo `LICENSE` para detalles c
 ### v1.0.0 (2026-01-15)
 - ✅ Pipeline CDP completo y ejecutable
 - ✅ Documentación teórica comprehensive
-- ✅ FAQ de entrevista (20 preguntas)
 - ✅ Guía de ejecución paso a paso
 - ✅ Simulación de Atlas + Ranger
 - ✅ Detección de anomalías con ML
@@ -388,8 +386,7 @@ Este proyecto está bajo licencia **MIT**. Ver archivo `LICENSE` para detalles c
 ¿Problemas o preguntas?
 
 - 📌 Abre un [Issue en GitHub](https://github.com/GeraMartinez94/proyecto-cdp/issues)
-- 💬 Revisa la sección FAQ en `03_FAQ_TECNICO_CDP.md`
-- 📖 Lee la guía de ejecución en `04_GUIA_EJECUCION.md`
+- 📖 Lee la guía de ejecución en `03_GUIA_EJECUCION.md`
 
 ---
 
