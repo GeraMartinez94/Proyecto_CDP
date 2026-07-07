@@ -1,4 +1,4 @@
-# 📊 Cloudera CDP - Proyecto Práctico
+#  Cloudera CDP 
 
 Un pipeline de datos **completo y ejecutable** que simula una arquitectura **Cloudera CDP real** para el sector energético.
 
@@ -6,41 +6,31 @@ Un pipeline de datos **completo y ejecutable** que simula una arquitectura **Clo
 
 ---
 
-## 🎯 ¿Qué es este proyecto?
-
-Este es un proyecto educativo que implementa un pipeline CDP completo sin necesidad de instalar un clúster real. Perfecto para:
-
-- ✅ Entender cómo funciona CDP en production
-- ✅ Aprender Spark, Airflow, ingesta de datos
-- ✅ Practicar para entrevistas de Data Engineering
-- ✅ Experimentar con transformaciones y gobernanza
-- ✅ Portfolio: mostrar en GitHub
-
 **Caso de uso:** Pipeline de medidores energéticos que ingesta datos cada 15 minutos, transforma con Spark, almacena en Data Lake, y detecta anomalías con ML.
 
 ---
 
-## 📁 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 proyecto-cdp/
-├── README.md                          # Este archivo
-├── 01_GUIA_CDP_TEORIA.md             # Conceptos teóricos de CDP
-├── 02_PIPELINE_CDP_PRACTICO.py       # Pipeline ejecutable ⭐
-├── 03_FAQ_TECNICO_CDP.md             # 20 preguntas de entrevista
-├── 04_GUIA_EJECUCION.md              # Instrucciones detalladas
-├── requirements.txt                  # Dependencias Python
-├── data_lake/                        # (Generado al ejecutar)
+├── README.md                        
+├── 01_GUIA_CDP_TEORIA.md            
+├── 02_PIPELINE_CDP_PRACTICO.py       
+├── 03_FAQ_TECNICO_CDP.md            
+├── 04_GUIA_EJECUCION.md             
+├── requirements.txt                
+├── data_lake/                        
 │   ├── raw_medidores_input.parquet
 │   ├── processed_medidores.parquet
 │   ├── aggregated_por_zona.parquet
 │   └── anomalias_detectadas.parquet
-└── .gitignore                        # Ignora data_lake/
+└── .gitignore                      
 ```
 
 ---
 
-## 🚀 Inicio Rápido
+##  Inicio Rápido
 
 ### 1. Clonar el repositorio
 
@@ -70,33 +60,12 @@ pip install -r requirements.txt
 python 02_PIPELINE_CDP_PRACTICO.py
 ```
 
-**Verás en consola:**
-```
-🚀 INICIANDO DAG CDP - Energético
-📡 INGESTA: Generando 500 registros de 1000 medidores
-✅ Ingesta completada: 500 registros generados
-💾 DATA LAKE: Guardando tabla 'raw_medidores_input'
-...
-✅ DAG COMPLETADO EXITOSAMENTE
-   Duración: 4.23 segundos
-```
 
 ---
 
-## 📚 Contenido del Proyecto
+##  Contenido del Proyecto
 
-### **01_GUIA_CDP_TEORIA.md** 📖
-Guía completa sobre Cloudera CDP:
-- Arquitectura y componentes
-- Data Hubs (Data Engineering, Warehouse, Operational DB)
-- Stack tecnológico (Kafka, Spark, Airflow, Atlas, Ranger)
-- Flujos ETL típicos
-- Comparativa con alternativas
-- Casos de uso reales
-
-**Tiempo:** 30 minutos de lectura
-
-### **02_PIPELINE_CDP_PRACTICO.py** 💻
+### **02_PIPELINE_CDP_PRACTICO.py**
 Pipeline ejecutable que implementa:
 
 ```
@@ -126,52 +95,7 @@ ORQUESTACIÓN (Airflow simulado)
 
 **Tiempo de ejecución:** ~4 segundos
 
-### **03_FAQ_TECNICO_CDP.md** ❓
-20 preguntas típicas de entrevista:
-
-**Nivel 1 - Fundamentales:**
-- ¿Cuál es la diferencia entre CDP y Hadoop tradicional?
-- ¿Qué es Data Hub?
-- ¿Qué rol juega Airflow?
-- ¿Por qué usar Kafka?
-
-**Nivel 2 - Arquitectura:**
-- Flujo ETL típico
-- Batch vs Streaming
-- Apache Atlas y gobernanza
-- Ranger vs Kerberos
-
-**Nivel 3 - Spark:**
-- Spark Batch vs Streaming
-- Optimización de jobs lentos
-- DataFrame vs RDD
-
-**Nivel 4 - Casos reales:**
-- Debuggear OutOfMemory
-- Seguridad de datos sensibles
-- Calidad de datos
-- Versionado de pipelines
-
-**Nivel 5 - Tricky:**
-- Qué pasa si Airflow falla
-- Evitar procesamiento duplicado
-- Debuggear en production
-- Disaster recovery
-- Migración de Hadoop a CDP
-
-**Tiempo:** 60 minutos
-
-### **04_GUIA_EJECUCION.md** 🔧
-Instrucciones paso a paso:
-- Instalación (con y sin Docker)
-- Ejecución en múltiples plataformas
-- Exploración de datos generados
-- Troubleshooting
-- Experimentos para profundizar
-
----
-
-## 💡 Conceptos Aplicados
+##  Conceptos Aplicados
 
 Este proyecto cubre **95% de lo que necesitas saber sobre CDP**:
 
@@ -187,125 +111,6 @@ Este proyecto cubre **95% de lo que necesitas saber sobre CDP**:
 
 ---
 
-## 🎓 Plan de Estudio Recomendado
-
-### **Día 1: Teoría** (30 min)
-```bash
-# Leer conceptos fundamentales
-cat 01_GUIA_CDP_TEORIA.md
-```
-
-### **Día 2: Práctica** (25 min)
-```bash
-# Ejecutar el pipeline
-python 02_PIPELINE_CDP_PRACTICO.py
-
-# Explorar datos generados
-ls -la data_lake/
-```
-
-### **Día 3: Entrevista** (60 min)
-```bash
-# Estudiar preguntas y respuestas
-cat 03_FAQ_TECNICO_CDP.md
-
-# Practicar en voz alta
-# (Grábate respondiendo para auto-evaluación)
-```
-
-### **Día 4: Consolidación** (30 min)
-```bash
-# Modificar código (experimentos)
-# Aumentar número de medidores
-# Agregar nuevas transformaciones
-# Cambiar algoritmo de anomalías
-```
-
----
-
-## 🔬 Experimentos para Profundizar
-
-Una vez hayas ejecutado el pipeline, intenta:
-
-### 1. Aumentar volumen de datos
-```python
-# Cambiar en línea ~120
-ingesta.generar_datos_medidores(num_medidores=10000, num_registros=5000)
-```
-
-### 2. Cambiar porcentaje de anomalías
-```python
-# En IngestaKafkaSimulada.generar_datos_medidores()
-if np.random.random() < 0.15:  # 15% en lugar de 5%
-```
-
-### 3. Agregar nueva métrica
-```python
-# En TransformacionSpark.enriquecer_datos()
-df['potencia_media'] = df['consumo_kwh'] / 0.25  # Por 15 minutos
-```
-
-### 4. Cambiar algoritmo de anomalías
-```python
-# Implementar IQR en lugar de Z-score
-Q1 = df.groupby('medidor_id')['consumo_kwh'].quantile(0.25)
-Q3 = df.groupby('medidor_id')['consumo_kwh'].quantile(0.75)
-IQR = Q3 - Q1
-df['anomalia_iqr'] = (df['consumo_kwh'] < Q1 - 1.5*IQR) | (df['consumo_kwh'] > Q3 + 1.5*IQR)
-```
-
----
-
-## 📊 Salida Esperada
-
-Al ejecutar el pipeline verás:
-
-```
-======================================================================
-🚀 INICIANDO DAG CDP - Energético
-======================================================================
-
-[TASK 1] INGESTA DE DATOS
-----------------------------------------------------------------------
-📡 INGESTA: Generando 500 registros de 1000 medidores
-✅ Ingesta completada: 500 registros generados
-💾 DATA LAKE: Guardando tabla 'raw_medidores_input'
-✅ Guardado en: ./data_lake/raw_medidores_input.parquet (0.05 MB)
-
-[TASK 2] TRANSFORMACIÓN (SPARK)
-----------------------------------------------------------------------
-🧹 SPARK: Limpiando datos
-✅ Registros después de limpieza: 500
-💎 SPARK: Enriqueciendo datos
-✅ Datos enriquecidos
-
-[TASK 3] AGREGACIÓN POR ZONA
-----------------------------------------------------------------------
-📊 SPARK: Agregando por zona
-✅ Agregación completada: 10 registros
-
-[TASK 4] DETECCIÓN DE ANOMALÍAS (ML)
-----------------------------------------------------------------------
-🤖 SPARK: Detectando anomalías
-✅ 25 anomalías detectadas
-
-[TASK 5] GENERACIÓN DE REPORTES
-----------------------------------------------------------------------
-📊 REPORTE FINAL
-   Total medidores: 1000
-   Total registros procesados: 500
-   Consumo total: 1250.75 kWh
-   Consumo promedio: 2.50 kWh
-   Anomalías detectadas: 25
-   Zonas analizadas: 10
-
-======================================================================
-✅ DAG COMPLETADO EXITOSAMENTE
-   Duración: 4.23 segundos
-======================================================================
-```
-
----
 
 ## 🛠️ Requisitos
 
