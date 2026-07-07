@@ -1,0 +1,32 @@
+# Cloudera CDP - Proyecto Práctico
+# Dependencias Python
+
+# Core Data Processing
+pandas==2.0.0
+numpy==1.24.0
+pyspark==3.5.0
+
+# Distributed Computing & Orchestration
+apache-airflow==2.7.0
+
+# Data Formats & Storage
+pyarrow==13.0.0
+fastparquet==2023.10.1
+
+# Optional: Para exploración avanzada
+duckdb==0.9.2
+
+# Testing & Quality
+pytest==7.4.0
+pytest-cov==4.1.0
+
+# Notebooks (Opcional)
+jupyter==1.0.0
+jupyterlab==4.0.0
+
+# Visualization (Opcional para experimentos)
+matplotlib==3.8.0
+plotly==5.17.0
+
+# Utils
+python-dotenv==1.0.0
